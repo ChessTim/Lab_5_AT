@@ -46,7 +46,7 @@ def test_product_is_displayed_in_cart(page: Page):
 
     page.locator('[data-test="shopping-cart-link"]').click()
 
-    expect(page).to_have_url("https://www.saucedemo.com/cart.html")
+    expect(page).to_have_url("https://www.saucedemo.com/cart_wrong.html")
     expect(page.locator('[data-test="title"]')).to_have_text("Your Cart")
     expect(page.locator('[data-test="inventory-item-name"]')).to_have_text("Sauce Labs Backpack")
 
